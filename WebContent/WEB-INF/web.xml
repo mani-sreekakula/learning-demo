@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>First JSP</display-name>
+	<welcome-file-list>
+		<welcome-file>first.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+    <servlet-name>firstAction</servlet-name>
+    <servlet-class>com.learning.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>firstAction</servlet-name>
+    <url-pattern>/firstAction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>secondAction</servlet-name>
+    <servlet-class>com.learning.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>secondAction</servlet-name>
+    <url-pattern>/secondAction</url-pattern>
+  </servlet-mapping>
+</web-app>
